@@ -1,4 +1,4 @@
-Create AWS S3
+# Create AWS S3
 resource "aws_s3_bucket" "ws_bucket_github" {
   bucket = "ws-github-action-bucket" 
 
