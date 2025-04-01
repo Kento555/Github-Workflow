@@ -18,7 +18,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
-        role-to-assume: arn:aws:iam::255945442255:role/WS-Github
+        role-to-assume: arn:aws:iam::255945442255:role/WS-Github  # Use OIDC(open ID Connect), https://chatgpt.com/c/67ebc438-132c-8006-9bdb-dc8efc6aeb93
         aws-region: ${{ env.AWS_REGION }}
 
     - name: Setup Terraform
