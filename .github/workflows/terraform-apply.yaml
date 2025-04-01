@@ -1,8 +1,4 @@
-permissions:
-  id-token: write
-  contents: read
-
-  name: Terraform Deployment
+name: Terraform Deployment
 
 on:
   push:
@@ -36,3 +32,7 @@ jobs:
    
     - name: Terraform Apply
       run: terraform apply --auto-approve
+
+permissions:
+  id-token: write
+  contents: read
